@@ -1,0 +1,33 @@
+$def with(page)
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Acme Store</title>
+    <style>
+    * {
+        font-family: arial;
+        text-decoration: none;
+        list-style: none;
+        padding: 5px;
+    }
+    a, li, p, label {
+        color: #000000;
+    } 
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/agregar">Insert</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        $:page
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+$def with(productos)
+<table class="table">
+	<th>Productos</th>
+	<th>Modificar</th>
+	<th>Borrar</th>
+		$for item in productos:
+		<tr>
+			<td><a href='view/$item.id'>
+			$item.producto</a></td>
+			<td><a href="modify/$item.id">Modificar</a></td>
+			<td><a href="">Borrar</a></td>
+		</tr>
+</table>
